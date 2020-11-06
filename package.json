@@ -1,0 +1,19 @@
+{
+  "name": "acqueon",
+  "version": "1.0.0",
+  "description": "Ui Exprement",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinocrzy/acqueon.git"
+  },
+  "author": "Vino Crazy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vinocrzy/acqueon/issues"
+  },
+  "homepage": "https://github.com/vinocrzy/acqueon#readme"
+}
