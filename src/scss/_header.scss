@@ -1,0 +1,40 @@
+header {
+  .top-bar {
+    background-color: #343e48;
+    .container {
+      display: flex;
+      justify-content: space-between;
+      width: 100vw;
+      p {
+        color: $p_light;
+        margin: auto;
+      }
+    }
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    .menu {
+      display: flex;
+      justify-content: space-between;
+      ul {
+        display: flex;
+        list-style: none;
+        li {
+          margin: 0 20px;
+        }
+      }
+    }
+    .action {
+      display: flex;
+      button {
+        border: 0;
+        border-radius: 25px;
+        min-width: 100px;
+        margin: 10px 25px;
+        min-width: 100px;
+        height: fit-content;
+      }
+    }
+  }
+}
