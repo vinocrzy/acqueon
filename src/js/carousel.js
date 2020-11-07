@@ -1,8 +1,12 @@
 import "owl.carousel";
 
 $(document).ready(function () {
-  $(".owl-carousel").owlCarousel({
+  $(".partners-carousel").owlCarousel({
     items: 3,
+    dots: true,
+  });
+  $(".testimonial-carousel").owlCarousel({
+    items: 1,
     dots: true,
   });
 });
