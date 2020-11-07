@@ -1,40 +1,66 @@
 header {
   .top-bar {
     background-color: #343e48;
+    padding: 5px;
     .container {
       display: flex;
       justify-content: space-between;
       width: 100vw;
       p {
-        color: $p_light;
+        color: #909aa7;
         margin: auto;
+        font-family: $primary-font;
+        font-size: 13px;
       }
     }
   }
   nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     .menu {
       display: flex;
       justify-content: space-between;
       ul {
         display: flex;
         list-style: none;
+        margin: 0;
         li {
           margin: 0 20px;
+          font-family: "Open Sans";
+          font-size: 14px;
+          font-weight: 600;
+          color: $primary-color2;
         }
       }
     }
     .action {
       display: flex;
-      button {
-        border: 0;
-        border-radius: 25px;
-        min-width: 100px;
-        margin: 10px 25px;
-        min-width: 100px;
-        height: fit-content;
-      }
     }
+  }
+}
+
+.btn {
+  &.light {
+    color: $primary-color;
+    border: 1px solid;
+  }
+  &.primary {
+    background-color: $primary-color;
+    color: #ffffff;
+  }
+  border: 0;
+  border-radius: 25px;
+  font-weight: 500;
+  line-height: 15px;
+  padding: 10px 20px;
+  margin: 10px 8px;
+  min-width: 100px;
+  font-size: 16px;
+  height: fit-content;
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
   }
 }
