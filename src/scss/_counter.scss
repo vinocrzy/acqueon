@@ -1,0 +1,34 @@
+.counters {
+  background-color: #dff3fe;
+  padding: 50px 0;
+  .counter {
+    text-align: center;
+    position: relative;
+    &.l {
+      &::after {
+        display: none;
+      }
+    }
+    &::after {
+      content: "";
+      display: block;
+      width: 1.5px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      background-color: gray;
+      @media (max-width: 767px) {
+        display: none;
+      }
+    }
+
+    h2 {
+      color: $primary-color;
+    }
+    p {
+      margin: 0;
+      color: gray;
+    }
+  }
+}

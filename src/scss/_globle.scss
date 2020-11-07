@@ -1,0 +1,23 @@
+@media (max-width: 880px) {
+  .hide-md {
+    display: none !important;
+  }
+  section {
+    padding: 50px 5px;
+  }
+}
+
+@media (max-width: 1220px) {
+  .hide-lap {
+    display: none !important;
+  }
+}
+
+* {
+  max-width: 100vw;
+}
+
+html,
+body {
+  overflow-x: hidden !important;
+}

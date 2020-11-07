@@ -1,0 +1,49 @@
+.hero {
+  background: linear-gradient(180deg, #c5e9ff, transparent);
+  .content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    h2 {
+      font-size: 2.5rem;
+      font-weight: 500;
+      color: $primary-color2;
+      @media (max-width: 767px) {
+        font-size: 2rem;
+      }
+      span {
+        color: $primary-color;
+        display: block;
+      }
+    }
+  }
+  .btn {
+    width: 40%;
+    text-transform: uppercase;
+  }
+  img {
+    width: 100%;
+  }
+}
+.hero-bottom {
+  background-color: $primary-color;
+  padding: 0;
+  .element {
+    display: flex;
+    justify-content: center;
+    .icon {
+      min-width: 120px;
+      display: flex;
+      justify-content: center;
+    }
+    @media (max-width: 767px) {
+      justify-content: end;
+    }
+    align-items: center;
+    .caption {
+      color: white;
+    }
+  }
+}

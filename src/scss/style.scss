@@ -1,4 +1,8 @@
-@import "~bootstrap/scss/bootstrap";
 @import "./variables";
+@import "./vendor/bootstrap";
 @import "./globle";
 @import "./header";
+@import "./banner";
+@import "./engagements";
+@import "./counter";
+@import "./carousel";
