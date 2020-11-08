@@ -1,5 +1,8 @@
 .hero {
   background: linear-gradient(180deg, #c5e9ff, transparent);
+  @media (max-width: 995px) {
+    padding-top: 150px;
+  }
   .content {
     display: flex;
     height: 100%;

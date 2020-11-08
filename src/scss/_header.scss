@@ -26,14 +26,50 @@ header {
     .main-head {
       padding: 20px;
     }
+
+    .burger-menu {
+      padding: 10px;
+      margin: 2px;
+      cursor: pointer;
+      display: none;
+      &:hover {
+        opacity: 0.6;
+      }
+      @media (max-width: 767px) {
+        display: block;
+      }
+    }
+
     .menu {
       display: flex;
       justify-content: space-between;
+
+      @media (max-width: 767px) {
+        display: none;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        left: 0;
+        top: 0;
+        background: #fff;
+        z-index: 99999;
+        &.open {
+          display: block;
+        }
+      }
       ul {
         display: flex;
         list-style: none;
         margin: 0;
+        @media (max-width: 767px) {
+          flex-direction: column;
+        }
         li {
+          @media (max-width: 767px) {
+            height: 15vh;
+            align-items: center;
+            display: flex;
+          }
           a {
             margin: 0 20px;
             font-family: "Open Sans";
@@ -41,6 +77,9 @@ header {
             font-weight: 600;
             color: $primary-color2;
             text-decoration: none;
+            @media (max-width: 767px) {
+              font-size: 1.3rem;
+            }
           }
         }
       }
